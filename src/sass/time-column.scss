@@ -10,7 +10,6 @@
   }
 }
 
-
 .rbc-timeslot-group {
   border-bottom: 1px solid $cell-border;
   min-height: 40px;
@@ -54,7 +53,7 @@
     overflow: hidden;
     position: absolute;
   }
-  
+
   .rbc-background-event {
     @extend .rbc-event;
     opacity: 0.75;
@@ -113,7 +112,7 @@
   .rbc-day-bg {
     width: 140px;
     // min-width: 0;
-    flex:  1 1 0;
+    flex: 1 1 0;
     flex-basis: 0 px;
   }
 }
@@ -124,10 +123,17 @@
 
 .rbc-time-slot {
   flex: 1 0 0;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 100ms;
 
   &.rbc-now {
     font-weight: bold;
   }
+}
+
+.rbc-time-slot:hover {
+  background-color: #f4f6f6;
 }
 
 .rbc-day-header {

@@ -158,13 +158,15 @@ class DayColumn extends React.Component {
           components={components}
           slotMetrics={slotMetrics}
         >
-          <div className={clsx('rbc-events-container', rtl && 'rtl')}>
-            {this.renderEvents({
-              events: this.props.backgroundEvents,
-              isBackgroundEvent: true,
-            })}
-            {this.renderEvents({ events: this.props.events })}
-          </div>
+          {this.props.events?.length > 0 && (
+            <div className={clsx('rbc-events-container', rtl && 'rtl')}>
+              {this.renderEvents({
+                events: this.props.backgroundEvents,
+                isBackgroundEvent: true,
+              })}
+              {this.renderEvents({ events: this.props.events })}
+            </div>
+          )}
         </EventContainer>
 
         {selecting && (
