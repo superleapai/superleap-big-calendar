@@ -368,6 +368,7 @@ button.rbc-input::-moz-focus-inner {
 .rbc-month-view {
   position: relative;
   border: 1px solid #ddd;
+  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -742,6 +743,7 @@ button.rbc-input::-moz-focus-inner {
   flex: 1;
   width: 100%;
   border: 1px solid #ddd;
+  border-radius: 4px;
   min-height: 0;
 }
 .rbc-time-view .rbc-time-gutter {
