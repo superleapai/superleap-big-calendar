@@ -98,6 +98,9 @@ button.rbc-input::-moz-focus-inner {
   vertical-align: middle;
   font-weight: bold;
   font-size: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
   min-height: 0;
   border-bottom: 1px solid #ddd;
 }
@@ -342,6 +345,9 @@ button.rbc-input::-moz-focus-inner {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 .rbc-row-segment {
